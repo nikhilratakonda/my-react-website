@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import Navigation from './Navigation';
 import styled from 'styled-components';
 // component styles
@@ -22,7 +23,7 @@ const Main = styled.main`
     overflow-y: scroll;
     @media (min-width: 700px) {
         flex: 1;
-        margin-left: 260px;
+        margin-left: 480px;
         height: calc(100% - 64px);
         width: calc(100% - 260px);
     }
@@ -34,7 +35,9 @@ const Layout = ({ children }) => {
         <Wrapper>
             <Navigation />
             <Main>{children}</Main>
+            <Footer />
         </Wrapper>
+        
     </React.Fragment>
     );
 };

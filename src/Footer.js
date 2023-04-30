@@ -5,19 +5,20 @@ const HeaderBar = styled.header`
     padding: 0.5em 1em;
     display: flex;
     height: 64px;
+    top : 1084px;
     position: fixed;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     z-index: 1;
-    
+
 `;
-const Header = () => {
+const Footer = () => {
 return (
     <HeaderBar>
-       <h2 style = {{marginLeft:'750px'}}>  My First Single Page Application Using ReactJS!</h2>
+       <h2 style = {{marginLeft:'950px'}}> Copy right @ Nikhil </h2>
     </HeaderBar>
    
     );
 };
-export default Header;
+export default Footer;
